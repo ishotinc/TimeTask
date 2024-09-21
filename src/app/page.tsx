@@ -1,8 +1,9 @@
 "use client"
 
 import React, { useEffect, useRef, useState } from 'react'
-import { Clock, BarChart2, Users, Play } from "lucide-react"
+import { Button } from "@/app/_components/button"
 import { Input } from "@/app/_components/input"
+import { Clock, BarChart2, Users, Play } from "lucide-react"
 import styles from '@/app/_styles/landing-page.module.scss'
 
 export default function LandingPage() {
@@ -66,11 +67,11 @@ export default function LandingPage() {
             </nav>
           </div>
           <div className={styles.headerRight}>
-            <button className={styles.loginbutton}>ログイン</button>
-            <button className={styles.signupbutton}>
+            <Button variant="ghost" className={styles.loginButton}>ログイン</Button>
+            <Button className={styles.signupButton}>
               アカウント登録
               <Play className={styles.signupIcon} />
-            </button>
+            </Button>
           </div>
         </div>
       </header>
@@ -95,11 +96,11 @@ export default function LandingPage() {
             </div>
             <div className={styles.heroForm}>
               <form className={styles.signupForm}>
-              <Input className={styles.emailInput} placeholder="メールアドレス" type="email" />
-                <button type="submit" className={styles.submitbutton}>
+                <Input className={styles.emailInput} placeholder="メールアドレス" type="email" /> 
+                <Button type="submit" className={styles.submitButton}>
                   アカウント登録
                   <Play className={styles.submitIcon} />
-                </button>
+                </Button>
               </form>
             </div>
           </div>
@@ -181,10 +182,10 @@ export default function LandingPage() {
             <p className={styles.ctaDescription}>
               TimeTrackを使って、あなたのチームの生産性を向上させませんか？無料で始められます。
             </p>
-            <button className={styles.ctabutton}>
+            <Button className={styles.ctaButton}>
               アカウント登録
               <Play className={styles.ctaIcon} />
-            </button>
+            </Button>
           </div>
         </section>
       </main>
