@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import { Clock, BarChart2, Users, Play } from "lucide-react"
+import { Input } from "@/app/_components/input"
 import styles from '@/app/_styles/landing-page.module.scss'
 
 export default function LandingPage() {
@@ -94,7 +95,7 @@ export default function LandingPage() {
             </div>
             <div className={styles.heroForm}>
               <form className={styles.signupForm}>
-                <input className={styles.emailinput} placeholder="メールアドレス" type="email" />
+              <Input className={styles.emailInput} placeholder="メールアドレス" type="email" />
                 <button type="submit" className={styles.submitbutton}>
                   アカウント登録
                   <Play className={styles.submitIcon} />
