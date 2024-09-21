@@ -138,36 +138,28 @@ export default function LandingPage() {
             <h2 className={styles.howItWorksTitle}>使い方</h2>
             <div className={styles.howItWorksList}>
               <div className={styles.howItWorksItem}>
-                <div className={styles.mockupWrapper}>
-                  <img
-                    src="/placeholder.svg?height=1080&width=1920"
-                    alt="PC Mockup"
-                    className={styles.mockupImage}
-                  />
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LdEaIpVoZwRnosB201ErbWfnjho00P.png"
-                    alt="TimeTrackインターフェース"
-                    className={styles.interfaceImage}
-                  />
-                </div>
+              <div className={styles.mockupPcWrapper}>
+                <div className={styles.mockupBackground} data-dimensions="1920x1080"></div>
+                <img
+                  src="/TimeTrackInterface.png"
+                  alt="TimeTrackインターフェース"
+                  className={styles.interfacePcImage}
+                />
+              </div>
                 <p className={styles.howItWorksDescription}>
                   TimeTrackは直感的なインターフェースで、タスクの管理と時間の記録を簡単に行えます。
                   未着手、進行中、完了の3つのカラムでタスクを整理し、各タスクの所要時間を正確に把握できます。
                 </p>
               </div>
               <div className={styles.howItWorksItem}>
-                <div className={styles.mockupWrapper}>
-                  <img
-                    src="/placeholder.svg?height=2532&width=1170"
-                    alt="Smartphone Mockup"
-                    className={styles.mockupImage}
-                  />
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-zzJYDqxaaAI5a39Vi6cSwZShDvF0LB.png"
-                    alt="タスク詳細ビュー"
-                    className={styles.interfaceImage}
-                  />
-                </div>
+              <div className={`${styles.mockupSpWrapper} ${styles.smartphone}`}>
+                <div className={styles.mockupBackground} data-dimensions="1170x2532"></div>
+                <img
+                  src="/TaskView.png"
+                  alt="タスク詳細ビュー"
+                  className={styles.interfaceSpImage}
+                />
+              </div>
                 <p className={styles.howItWorksDescription}>
                   各タスクの詳細ビューでは、ラベル、説明、チェックリスト、進捗状況を一目で確認できます。
                   さらに、コメント機能を使ってチームメンバーとコミュニケーションを取ることができます。
