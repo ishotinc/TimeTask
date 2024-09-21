@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect, useRef, useState } from 'react'
+import Image from "next/image";
 import { Button } from "@/app/_components/button"
 import { Input } from "@/app/_components/input"
 import { Clock, BarChart2, Users, Play } from "lucide-react"
@@ -140,7 +141,7 @@ export default function LandingPage() {
               <div className={styles.howItWorksItem}>
               <div className={styles.mockupPcWrapper}>
                 <div className={styles.mockupBackground} data-dimensions="1920x1080"></div>
-                <img
+                <Image fill={true}
                   src="/TimeTrackInterface.png"
                   alt="TimeTrackインターフェース"
                   className={styles.interfacePcImage}
@@ -154,7 +155,7 @@ export default function LandingPage() {
               <div className={styles.howItWorksItem}>
               <div className={`${styles.mockupSpWrapper} ${styles.smartphone}`}>
                 <div className={styles.mockupBackground} data-dimensions="1170x2532"></div>
-                <img
+                <Image fill={true}
                   src="/TaskView.png"
                   alt="タスク詳細ビュー"
                   className={styles.interfaceSpImage}
