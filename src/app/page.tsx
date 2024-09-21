@@ -96,7 +96,7 @@ export default function LandingPage() {
             </div>
             <div className={styles.heroForm}>
               <form className={styles.signupForm}>
-                <Input className={styles.emailInput} placeholder="メールアドレス" type="email" /> 
+                <Input className={styles.emailInput} placeholder="メールアドレス" type="email" />
                 <Button type="submit" className={styles.submitButton}>
                   アカウント登録
                   <Play className={styles.submitIcon} />
